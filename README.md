@@ -78,15 +78,21 @@ Variables Globales:
 Listas para Almacenar Resultados:
  C_t_values: Lista para almacenar la evolución de la concentración de triglicéridos a lo largo
  del tiempo.
+ 
  C_m_values: Lista para almacenar la evolución de la concentración de metanol a lo largo del
  tiempo.
+ 
  C_b_values: Lista para almacenar la evolución de la concentración de biodiésel a lo largo del
  tiempo.
+ 
  C_g_values: Lista para almacenar la evolución de la concentración de glicerina a lo largo del
  tiempo.
+ 
  temperature_values: Lista para almacenar la evolución de la temperatura del sistema durante
  la simulación.
+ 
  Variables en las Funciones de Separación y Purificación:
+ 
  eficiencia: Es un parámetro utilizado en las funciones separacion y purificacion que indica qué
  tan eficiente es el proceso de separación o purificación. En la función de separación, se asume
  que una fracción del biodiésel y la glicerina se obtiene tras la separación, mientras que en la
@@ -94,23 +100,33 @@ Listas para Almacenar Resultados:
  purificación.
 
  Variables en la Función simulacion_interactiva:
+ 
  C_t0: Concentración inicial de triglicéridos en la simulación (mol/L). Es el valor que el usuario
  ingresa a través del control deslizante en la interfaz interactiva.
+ 
  C_m0: Concentración inicial de metanol en la simulación (mol/L). Es el valor que el usuario
  ingresa a través del control deslizante en la interfaz interactiva.
+ 
  t_reaccion: Tiempo total de reacción en segundos. El usuario puede ajustar este parámetro a
  través de un control deslizante.
+ 
  eficiencia_separacion: Eficiencia de la separación entre biodiésel y glicerina. Es un valor que
  el usuario puede ajustar entre 0.9 y 1.0.
+ 
  eficiencia_purificacion: Eficiencia de la purificación del biodiésel. También es un valor
  ajustable por el usuario, entre 0.9 y 1.0.
  
  Widgets para Interactividad:
- C_t_slider: Control deslizante para ajustar la concentración inicial de triglicéridos. 1.
- C_m_slider: Control deslizante para ajustar la concentración inicial de metanol. 2.
- t_slider: Control deslizante para ajustar el tiempo de reacción. 3.
- ef_separacion_slider: Control deslizante para ajustar la eficiencia de separación. 4.
+ C_t_slider: Control deslizante para ajustar la concentración inicial de triglicéridos. 
+ 
+ C_m_slider: Control deslizante para ajustar la concentración inicial de metanol. 
+ 
+ t_slider: Control deslizante para ajustar el tiempo de reacción. 
+ 
+ ef_separacion_slider: Control deslizante para ajustar la eficiencia de separación. 
+ 
  ef_purificacion_slider: Control deslizante para ajustar la eficiencia de purificación.
+ 
 ## Requisitos
 
 - Python 3.8+
